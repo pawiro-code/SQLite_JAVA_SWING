@@ -34,7 +34,7 @@ public class JavaDB {
 
         JTable table = new JTable(); 
         JFrame frame = new JFrame();
-        frame.setSize(680,400);
+        frame.setSize(900,400);
         frame.setTitle("Database SQLite");
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -62,7 +62,7 @@ public class JavaDB {
         JButton btnUpdate = new JButton("Update");
         JButton btnDelete = new JButton("Delete");
 
-        //setiing textfields
+        //setting textfields
         textId.setBounds(20, 240, 100, 25);
         textFname.setBounds(20, 270, 100, 25);
         textLname.setBounds(20, 300, 100, 25);
@@ -74,7 +74,7 @@ public class JavaDB {
 
         //create JScrollPane
         JScrollPane pane = new JScrollPane(table);
-        pane.setBounds(0, 0, 680, 400);
+        pane.setBounds(0, 0, 880, 200);
 
         frame.setLayout(null);
 

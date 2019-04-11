@@ -37,6 +37,9 @@ public class SqliteDB {
             
             conn = DriverManager.getConnection(url);
             
+            //log
+            System.out.println("Connected to DB");
+            
         } catch (SQLException e) { 
             
             //log
@@ -214,7 +217,12 @@ public class SqliteDB {
     public void closeConnection() {
         
         try {
-        
+            
+            Connection conn = this.connect();
+            conn.close();
+            
+            //log 
+            System.out.println("Closing connection");
         } catch (Exception e) {
             
             //log
